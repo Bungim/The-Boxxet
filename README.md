@@ -59,8 +59,6 @@
             margin-left: auto;
             /* ทำให้เมนูไปอยู่ด้านขวา */
             padding: 20px 20px;
-
-
         }
 
         .navbar a {
@@ -113,7 +111,6 @@
             margin-right: 0;
             margin-top: 90px;
             height: 100%;
-
         }
 
 
@@ -126,8 +123,6 @@
             width: 100%;
             height: 100vh;
             text-align: center;
-
-
         }
 
         .cover a {
@@ -517,6 +512,7 @@
             /* จัดกลางแนวตั้ง */
             text-align: center;
         }
+
         .footer {
             font-family: 'Kanit', sans-serif;
             display: block;
@@ -672,8 +668,6 @@
     <div class="footer">
         © THE BOXXET Co., Ltd. All rights reserved.
     </div>
-
-
     <script src="App_mini.js">
     </script>
 </body>
