@@ -23,6 +23,13 @@
     <title>เกี่ยวกับเรา | The Boxxet</title>
     <link rel="icon" type="image/png" href="Asset/AW_THE-BOXXET_Master_logo_W_Favicon.png">
     <style>
+        body {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 90px;
+            height: 100%;
+        }
+
         header {
             position: fixed;
             top: 0;
@@ -59,8 +66,6 @@
             margin-left: auto;
             /* ทำให้เมนูไปอยู่ด้านขวา */
             padding: 20px 20px;
-
-
         }
 
         .navbar a {
@@ -106,28 +111,131 @@
             .navbar.responsive .navbar-links a {
                 display: block;
             }
-        }
-                body {
-            margin-left: 0;
-            margin-right: 0;
-            margin-top: 90px;
-            height: 100%;
 
+
+        }
+
+        .heading1 {
+            font-family: 'Kanit', sans-serif;
+            color: #333333;
+            max-width: 1500px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .heading-bg {
+            background-color: rgba(9, 40, 61, 0.1);
+            height: 500px;
+        }
+
+
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: top;
+            gap: 30px;
+
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.0em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero h2 {
+            font-size: 2.0em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero img {
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        @media (max-width:768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                width: 100%;
+            }
+
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .section {
+            margin-top: 60px;
+        }
+
+        .section h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.4em;
+            color: #333;
+        }
+
+        .cta {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .cta button {
+            font-family: 'Kanit', sans-serif;
+            padding: 12px 30px;
+            background-color: rgb(9, 40, 61);
+            border: none;
+            color: rgb(255, 201, 5);
+            font-size: 1.5em;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            font-family: 'Kanit', sans-serif;
+            background-color: rgb(255, 201, 5);
+            color: rgb(9, 40, 61);
+        }
+
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 250px;
+
+        }
+
+        .spc {
+            font-size: 30px;
+            text-align: center;
+            padding-top: 30px;
         }
     </style>
 </head>
 
 <body>
-<header id="header">
+    <header id="header">
         <div style="margin-left: 2vw;"><a href="https://theboxxet.com/"><img
                     src="Asset/AW_THE-BOXXET_Master_logo_W_Edited.png" alt="logo" height="70"></a></div>
         <div class="navbar" id="navbar"><b>
                 <span class="menu-icon" onclick="toggleMenu()">☰</span>
                 <div class="navbar-links">
-                    <h1><a href="#home" onclick="scrollToTop()">
+                    <h1><a href="index.html">
                             หน้าหลัก
                         </a>
-                        <a href="#about">
+                        <a href="" onclick="scrollToTop()">
                             เกี่ยวกับเรา
                         </a>
                         <a href="#services">
@@ -144,8 +252,59 @@
         </div>
         </div>
     </header>
+    <div class="heading-bg">
+        <div class="heading1">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1><u>เราเป็นใคร?</u></h1>
+                    <h2>บริษัท เดอะ บ็อกซ์เซ็ต จำกัด</h2>
+                    <p style="font-size: 24px;">
+                        &emsp;&emsp;&emsp;&emsp;ผู้ให้บริการบูธมาตรฐานและอุปกรณ์การออกบุธแสดงสินค้าที่มืออาชีพ
+                        มุ่งมั่นในการสร้างสรรค์ประสบการณ์การแสดงสินค้าและอีเวนต์ที่โดดเด่น
+                        ด้วยบริการจัดบูธและอุปกรณ์ที่ครบวงจร คุณภาพสูง และตรงเวลา
+                        เพื่อเสริมสร้างภาพลักษณ์ที่น่าประทับใจให้แก่ลูกค้าทุกกลุ่ม
+                        เรามุ่งมั่นเป็นพันธมิตรที่เชื่อถือได้ในการจัดแสดงสินค้าและออกบูธ ด้วยการให้บริการที่รวดเร็ว
+                        ยืดหยุ่น และตอบโจทย์ทุกความต้องการของคุณ</p>
+                </div>
+                <img src="Asset/IMG_20210217_091020_0.jpg" alt="">
+            </div>
 
+            <div class="section two-columns">
+                <div class="column">
+                    <h1>เรื่องราวของ "เดอะ บ็อกซ์เซ็ต"</h1>
+                    <p style="font-size: 20px;">&emsp;&emsp;&emsp;&emsp;ด้วยประสบการณ์มายาวนานกว่า 10 ปี
+                        จากการเริ่มต้นในปี พ.ศ.2555 ภายใต้ชื่อ "สัมปทา"
+                        เราได้สั่งสมประสบการณ์และความเชี่ยวชาญทางด้านบริการรับจัดบูธแสดงสินค้า บอร์ดนิทรรศการ
+                        งานวิจัยการตลาดแบบครบวงจร
+                        และสร้างสรรค์บริการที่ตอบโจทย์ทุกความต้องการของคุณ เพื่อให้งานของคุณได้ดำเนินการอย่างราบรื่น
+                        เราภูมิใจที่ได้เป็นส่วนหนึ่งในความสำเร็จของหลากหลายองค์กร
+                    </p>
+                </div>
+                <div class="column">
+                    <h1>วิสัยทัศน์ของ "เดอะ บ็อกซ์เซ็ต"</h1>
+                    <p style="font-size: 20px;">&emsp;&emsp;&emsp;&emsp;"เดอะ บ็อกซ์เซ็ต"จะสร้างมาตรฐานใหม่ของการจัดบูธ
+                        ด้วยระบบการทำงานแบบครบวงจร บริการระดับมืออาชีพ และทีมงานที่ใส่ใจในทุกรายละเอียด
+                        เพื่อความมั่นใจของคุณในทุกงานแสดงสินค้า และเรายังคงพัฒนาความสามารถของเราอย่างต่อเนื่อง
+                        เพื่อส่งมอบคุณค่าและสร้างความเชื่อมั่นให้กับลูกค้าของเราในทุกโอกาส</p>
+                </div>
+            </div>
 
+            <div class="section">
+                <h1>ทำไมต้อง "เดอะ บ็อกซ์เซ็ต"</h1>
+                <p style="font-size:20px">&emsp;&emsp;&emsp;&emsp;เราได้เรียนรู้การจัดบูธแสดงสินค้าและวิจัยการตลาดแบบครบวงจรมามากกว่า 10 ปี
+                    เราจะดูแลคุณและตอบโจทย์ทุกความต้องการของคุณได้อย่างมั่นใจและใส่ใจในทุกรายละเอียด 
+                </p>
+                <div class="spc"><b>"เราไม่ใช่แค่ทีมจัดบูธ — เราคือพาร์ทเนอร์ด้านภาพลักษณ์ของคุณ"</b></div>
+
+            </div>
+
+            <div class="cta">
+                <button><b>ติดต่อเรา</b></button>
+            </div>
+        </div>
+    </div>
+    <script src="App_TBX.js">
+    </script>
 </body>
 
 </html>
