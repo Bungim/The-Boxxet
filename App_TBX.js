@@ -86,3 +86,10 @@ function toggleMenu() {
 }
 
   //สไลด์ภาพ 3 รุป
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }

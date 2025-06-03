@@ -23,6 +23,10 @@
     <title>The Boxxet - บริการรับจัดบูธและเช่าอุปกรณ์จัดบูธครบวงจร</title>
     <link rel="icon" type="image/png" href="Asset/AW_THE-BOXXET_Master_logo_W_Favicon.png">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         header {
             position: fixed;
             top: 0;
@@ -227,6 +231,14 @@
             padding-top: 50px;
             color: white;
             font-family: 'Kanit', sans-serif;
+        }
+
+        .service h1 a {
+            color: white;
+        }
+
+        .service h1 a:hover {
+            color: rgb(255, 201, 5);
         }
 
         .service h2 {
@@ -517,6 +529,11 @@
             /* จัดกลางแนวตั้ง */
             text-align: center;
         }
+
+        .icon-text3 img {
+            border-radius: 10px;
+        }
+
         .footer {
             font-family: 'Kanit', sans-serif;
             display: block;
@@ -529,6 +546,10 @@
             text-align: center;
             padding: 10px;
         }
+
+        #about {
+            scroll-margin-top: 110px;
+        }
     </style>
 </head>
 
@@ -539,7 +560,7 @@
         <div class="navbar" id="navbar"><b>
                 <span class="menu-icon" onclick="toggleMenu()">☰</span>
                 <div class="navbar-links">
-                    <h1><a href="#home">
+                    <h1><a href="#home" onclick="scrollToTop()">
                             หน้าหลัก
                         </a>
                         <a href="#about">
@@ -570,7 +591,7 @@
         </div>
     </div>
     <div class="headline1">
-        <div class="content1">
+        <div class="content1" id="about">
             <h1><u>เกี่ยวกับเรา</u></h1>
             <h2 class="content2">ด้วยประสบการณ์มายาวนานกว่า 10 ปี จากการเริ่มต้นในปี พ.ศ.2555 ภายใต้ชื่อ
                 <b>"สัมปทา"</b><br>
@@ -588,12 +609,13 @@
         </div>
     </div>
     <div class="service">
-        <h1><u>บริการของเรา</u></h1>
+        <h1><a href="#services">
+                <u>บริการของเรา</u>
+            </a></h1>
         <h2>ทำไมต้อง <b>THE BOXXET</b> - บูธสำเร็จรูปคุณภาพสูงที่ออกแบบมาเพื่อรองรับงานแสดงสินค้า, อีเวนต์, งานประชุม
             และโปรโมชันทุกรูปแบบ
             โครงสร้างแข็งแรง <br>ประกอบง่าย ปรับเปลี่ยนได้หลากหลายตามความต้องการของคุณ
             พร้อมระบบไฟฟ้าและพื้นฐานที่ครบครัน</h2>
-
         <div class="slider-container" id="sliderContainer">
             <div class="slider-track" id="sliderTrack">
                 <div class="slide">
@@ -604,14 +626,14 @@
                     </div>
                 </div>
                 <div class="slide"><img src="Asset/29.png" alt="รูปที่ 2"></div>
-                <div class="slide"><img src="Asset/25.png" alt="รูปที่ 3"></div>
+                <div class="slide"><img src="Asset/Shelf4.png" alt="รูปที่ 3"></div>
                 <div class="slide"><img src="Asset/Shelf3.png" alt="รูปที่ 4"></div>
                 <div class="slide"><img src="Asset/โต๊ะหน้าขาว.png" alt="รูปที่ 5">
                 </div>
                 <div class="slide"><img src="Asset/เก้าอี้.png" alt="รูปที่ 6">
                 </div>
                 <div class="slide"><img src="Asset/ไฟ1.png" alt="รูปที่ 7"></div>
-                <div class="slide"><img src="Asset/Shelf4.png" alt="รูปที่ 8"></div>
+                <div class="slide"><img src="Asset/25.png" alt="รูปที่ 8"></div>
             </div>
             <div class="nav-buttons">
                 <button class="nav prev" onclick="prevSlide()">❮</button>
@@ -645,7 +667,7 @@
                     </div>
                     <div class="icon-text2">
                         <i><img src="Asset/phone_iphone_24dp_E3E3E3_FILL0_wght300_GRAD0_opsz24.svg" alt=""></i>
-                        <span>095-956-5419, 064-265-9428</span>
+                        <span>095-956-5419</span>
                     </div>
                     <div class="icon-text2">
                         <i><img src="Asset/icons8-line.svg" alt=""></i>
@@ -663,8 +685,8 @@
                 <div class="text-block">
                     <div class="icon-text3">
                         <img src="Asset/S_gainfriends_2dbarcodes_BW.png" alt=""><br>
-                        <a href="https://line.me/R/ti/p/@389nadhe?ts=05220217&oat_content=url"><img src="Asset/line-icon.png" alt=""
-                    width="150"></a>
+                        <a href="https://line.me/R/ti/p/@389nadhe?ts=05220217&oat_content=url"><img
+                                src="Asset/line-icon.png" alt="" width="150"></a>
                     </div>
 
                 </div>

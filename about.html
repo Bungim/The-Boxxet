@@ -1,0 +1,151 @@
+<html lang="th">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บไซต์ของเราให้บริการ...">
+    <meta name="keywords" content="เว็บ, ทำเว็บไซต์, เรียนรู้ HTML">
+    <meta name="author" content="ชื่อของคุณ">
+    <meta name="robots" content="index, follow"> <!-- ให้คลานและติดอันดับ -->
+    <meta property="og:title" content="ชื่อเว็บไซต์ของคุณ">
+    <meta property="og:description" content="คำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์ของคุณ">
+    <meta property="og:image" content="URL ของภาพที่จะแสดง">
+    <meta property="og:url" content="URL ของเว็บไซต์">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ชื่อเว็บไซต์ของคุณ">
+    <meta name="twitter:description" content="คำอธิบายของเว็บไซต์">
+    <meta name="twitter:image" content="URL ของภาพที่จะแสดง">
+    <title>เกี่ยวกับเรา | The Boxxet</title>
+    <link rel="icon" type="image/png" href="Asset/AW_THE-BOXXET_Master_logo_W_Favicon.png">
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            /*ใช้ Flexbox*/
+            justify-content: space-between;
+            align-items: top;
+            background-image: linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138));
+            /* สีพื้นหลังของเฮดเดอร์ */
+            padding: 10;
+            /*ความกว้างของพื้นหลัง*/
+            text-align: center;
+            /* จัดข้อความให้ตรงกลาง */
+            width: 100%;
+            /* ทำให้เฮดเดอร์ขยายเต็มหน้าจอ */
+            box-sizing: border-box;
+            /* รวมขอบและการ padding ในขนาดที่กำหนด */
+            padding-left: 30px;
+            padding-right: 30px;
+            transition: 0.3s;
+            z-index: 2;
+        }
+
+        .navbar h1 {
+            display: inline-block;
+            color: white;
+            /* สีลิงก์เป็นสีขาว */
+            text-decoration: none;
+            /* ไม่มีขีดเส้นใต้ */
+            margin: 0 15px;
+            /* ระยะห่างระหว่างลิงก์ */
+            font-size: 18px;
+            margin-left: auto;
+            /* ทำให้เมนูไปอยู่ด้านขวา */
+            padding: 20px 20px;
+
+
+        }
+
+        .navbar a {
+            color: white;
+            /* สีลิงก์เป็นสีขาว */
+            text-decoration: none;
+            /* ไม่มีขีดเส้นใต้ */
+            margin: 0 15px;
+            /* ระยะห่างระหว่างลิงก์ */
+            font-size: 18px;
+            margin-left: auto;
+            /* ทำให้เมนูไปอยู่ด้านขวา */
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(255, 201, 5);
+            border-radius: 10px;
+            color: black;
+            transition: 0.3ms;
+        }
+
+        .menu-icon {
+            display: none;
+            float: right;
+            padding: 14px 16px;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .navbar a {
+                display: none;
+                width: 100%;
+                text-align: left;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .navbar.responsive .navbar-links a {
+                display: block;
+            }
+        }
+                body {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 90px;
+            height: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+<header id="header">
+        <div style="margin-left: 2vw;"><a href="https://theboxxet.com/"><img
+                    src="Asset/AW_THE-BOXXET_Master_logo_W_Edited.png" alt="logo" height="70"></a></div>
+        <div class="navbar" id="navbar"><b>
+                <span class="menu-icon" onclick="toggleMenu()">☰</span>
+                <div class="navbar-links">
+                    <h1><a href="#home" onclick="scrollToTop()">
+                            หน้าหลัก
+                        </a>
+                        <a href="#about">
+                            เกี่ยวกับเรา
+                        </a>
+                        <a href="#services">
+                            บริการของเรา
+                        </a>
+                        <a href="#gallery">
+                            ผลงานของเรา
+                        </a>
+                        <a href="#contact">
+                            ติดต่อเรา
+                        </a>
+                    </h1>
+            </b>
+        </div>
+        </div>
+    </header>
+
+
+</body>
+
+</html>
