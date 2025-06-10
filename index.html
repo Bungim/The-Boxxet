@@ -314,8 +314,8 @@
         .slide img {
             background-color: white;
             width: 100%;
-            height: auto;
-            object-fit: cover;
+            height: 100%;
+            object-fit: contain;
             border-radius: 10px;
 
         }
@@ -364,19 +364,26 @@
         .image-wrapper img {
             display: block;
             width: 100%;
-            height: auto;
+            height: 100%;
         }
 
         .image-caption {
             position: absolute;
+            top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             background: rgba(9, 40, 61, 0.6);
             /* พื้นหลังดำโปร่ง */
             color: white;
-            padding: 100px;
-            text-align: center;
+            padding: 70px;
+            white-space: nowrap;
+            /* ไม่ให้ขึ้นบรรทัดใหม่ */
+            /* text-align: center; */
+            /* justify-content: center; */
+            /* จัดกลางแนวนอน */
+            align-items: center;
+            /* จัดกลางแนวตั้ง */
             opacity: 0;
             border-radius: 0 0 10px 10px;
             transition: opacity 0.3s ease;
@@ -546,27 +553,23 @@
             text-align: center;
             padding: 10px;
         }
-
-        #about {
-            scroll-margin-top: 110px;
-        }
     </style>
 </head>
 
 <body>
     <header id="header">
-        <div style="margin-left: 2vw;"><a href="https://theboxxet.com/"><img
-                    src="Asset/AW_THE-BOXXET_Master_logo_W_Edited.png" alt="logo" height="70"></a></div>
+        <div style="margin-left: 2vw;"><a href="index.html"><img src="Asset/AW_THE-BOXXET_Master_logo_W_Edited.png"
+                    alt="logo" height="70"></a></div>
         <div class="navbar" id="navbar"><b>
                 <span class="menu-icon" onclick="toggleMenu()">☰</span>
                 <div class="navbar-links">
-                    <h1><a href="#home" onclick="scrollToTop()">
+                    <h1><a href="index.html" onclick="scrollToTop()">
                             หน้าหลัก
                         </a>
                         <a href="about.html">
                             เกี่ยวกับเรา
                         </a>
-                        <a href="#services">
+                        <a href="service.html">
                             บริการของเรา
                         </a>
                         <a href="#gallery">
@@ -609,7 +612,7 @@
         </div>
     </div>
     <div class="service">
-        <h1><a href="#services">
+        <h1><a href="service.html">
                 <u>บริการของเรา</u>
             </a></h1>
         <h2>ทำไมต้อง <b>THE BOXXET</b> - บูธสำเร็จรูปคุณภาพสูงที่ออกแบบมาเพื่อรองรับงานแสดงสินค้า, อีเวนต์, งานประชุม
@@ -625,15 +628,55 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide"><img src="Asset/29.png" alt="รูปที่ 2"></div>
-                <div class="slide"><img src="Asset/Shelf4.png" alt="รูปที่ 3"></div>
-                <div class="slide"><img src="Asset/Shelf3.png" alt="รูปที่ 4"></div>
-                <div class="slide"><img src="Asset/โต๊ะหน้าขาว.png" alt="รูปที่ 5">
+                <div class="slide">
+                    <div class="image-wrapper"><img src="Asset/4.4.4.png" alt="รูปที่ 2">
+                        <div class="image-caption">
+                            <h1>บูธไม้</h1>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide"><img src="Asset/เก้าอี้.png" alt="รูปที่ 6">
+                <div class="slide">
+                    <div class="image-wrapper"><img src="Asset/MaximaCostomBooth1-DO5DA6pU.png" alt="รูปที่ 3">
+                        <div class="image-caption">
+                            <h1>บูธแบบ Custom</h1>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide"><img src="Asset/ไฟ1.png" alt="รูปที่ 7"></div>
-                <div class="slide"><img src="Asset/25.png" alt="รูปที่ 8"></div>
+                <div class="slide">
+                    <div class="image-wrapper"><img src="Asset/Shelf3.png" alt="รูปที่ 4">
+                        <div class="image-caption">
+                            <h1>ชั้นวางสินค้า</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image-wrapper"><img src="Asset/โต๊ะหน้าขาว.png" alt="รูปที่ 5">
+                        <div class="image-caption">
+                            <h1>โต๊ะ</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image-wrapper"><img src="Asset/เก้าอี้.png" alt="รูปที่ 6">
+                        <div class="image-caption">
+                            <h1>เก้าอี้</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image-wrapper"><img src="Asset/ไฟ2.png" alt="รูปที่ 7">
+                        <div class="image-caption">
+                            <h1>ไฟส่องสว่าง</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image-wrapper"><img src="Asset/25.png" alt="รูปที่ 8">
+                        <div class="image-caption">
+                            <h1>พรม</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="nav-buttons">
                 <button class="nav prev" onclick="prevSlide()">❮</button>
@@ -644,7 +687,8 @@
     <div class="gallery">
         <h1><u>ผลงานของเรา</u></h1>
         <h2>เราภูมิใจนำเสนอผลงานที่เราได้มีโอกาสร่วมสร้างสรรค์ให้กับลูกค้าหลากหลายอุตสาหกรรม<br>
-            ทั้งในด้านการออกแบบและติดตั้ง Booth System, งานแสดงสินค้า, Exhibition Display และโครงสร้างบูธแบบครบวงจร<br>
+            ทั้งในด้านการออกแบบและติดตั้ง Booth System, งานแสดงสินค้า, Exhibition Display
+            และโครงสร้างบูธแบบครบวงจร<br>
             ทุกผลงานสะท้อนถึงความใส่ใจในรายละเอียด ความคิดสร้างสรรค์ และความมุ่งมั่นในการส่งมอบคุณภาพ<br>
             เพื่อให้แบรนด์ของลูกค้าโดดเด่นและน่าจดจำในทุกโอกาสที่นำเสนอ</h2>
         <a href="#gallery">แกลเลอรี่</a>
@@ -657,7 +701,8 @@
                     <span><b>บริษัท เดอะ บ็อกซ์เซ็ต จำกัด</b></span>
                     <div class="icon-text1">
                         <i><img src="Asset/location_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></i>
-                        <span>14/61 The Villa รามอินทรา ซอยคู้บอน 27 แยก 10 แขวงท่าแร้ง เขตบางเขน กรุงเทพ 10220</span>
+                        <span>14/61 The Villa รามอินทรา ซอยคู้บอน 27 แยก 10 แขวงท่าแร้ง เขตบางเขน กรุงเทพ
+                            10220</span>
                     </div>
                 </div>
                 <div class="text-block">

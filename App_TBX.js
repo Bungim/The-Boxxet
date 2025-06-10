@@ -93,3 +93,14 @@ function toggleMenu() {
       behavior: 'smooth'
     });
   }
+      // คำอธิบายแต่ละภาพ
+    const descriptions = {
+      "image1.jpg": "นี่คือภาพที่ 1 ซึ่งแสดงถึงธรรมชาติที่สวยงาม.",
+      "image2.jpg": "นี่คือภาพที่ 2 เป็นภาพเมืองยามค่ำคืนที่มีแสงไฟสวยงาม.",
+      "image3.jpg": "นี่คือภาพที่ 3 ของชายหาดที่เงียบสงบและอากาศสดชื่น."
+    };
+
+    function showImageWithDescription(imageSrc) {
+      document.getElementById('largeImage').src = imageSrc;
+      document.getElementById('descriptionText').innerText = descriptions[imageSrc] || "ไม่มีคำอธิบายสำหรับภาพนี้.";
+    }

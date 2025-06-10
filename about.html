@@ -28,7 +28,10 @@
             margin-right: 0;
             margin-top: 90px;
             height: 100%;
+            margin-bottom: 0;
         }
+
+        
 
         header {
             position: fixed;
@@ -222,13 +225,26 @@
             text-align: center;
             padding-top: 30px;
         }
+
+        .footer {
+            font-family: 'Kanit', sans-serif;
+            display: block;
+            background-color: #333;
+            color: white;
+            justify-content: center;
+            /* จัดกลางแนวนอน */
+            align-items: bottom;
+            /* จัดกลางแนวตั้ง */
+            text-align: center;
+            padding: 10px;
+        }
     </style>
 </head>
 
 <body>
     <header id="header">
-        <div style="margin-left: 2vw;"><a href="https://theboxxet.com/"><img
-                    src="Asset/AW_THE-BOXXET_Master_logo_W_Edited.png" alt="logo" height="70"></a></div>
+        <div style="margin-left: 2vw;"><a href="index.html"><img src="Asset/AW_THE-BOXXET_Master_logo_W_Edited.png"
+                    alt="logo" height="70"></a></div>
         <div class="navbar" id="navbar"><b>
                 <span class="menu-icon" onclick="toggleMenu()">☰</span>
                 <div class="navbar-links">
@@ -238,7 +254,7 @@
                         <a href="" onclick="scrollToTop()">
                             เกี่ยวกับเรา
                         </a>
-                        <a href="#services">
+                        <a href="service.html">
                             บริการของเรา
                         </a>
                         <a href="#gallery">
@@ -291,8 +307,9 @@
 
             <div class="section">
                 <h1>ทำไมต้อง "เดอะ บ็อกซ์เซ็ต"</h1>
-                <p style="font-size:20px">&emsp;&emsp;&emsp;&emsp;เราได้เรียนรู้การจัดบูธแสดงสินค้าและวิจัยการตลาดแบบครบวงจรมามากกว่า 10 ปี
-                    เราจะดูแลคุณและตอบโจทย์ทุกความต้องการของคุณได้อย่างมั่นใจและใส่ใจในทุกรายละเอียด 
+                <p style="font-size:20px">
+                    &emsp;&emsp;&emsp;&emsp;เราได้เรียนรู้การจัดบูธแสดงสินค้าและวิจัยการตลาดแบบครบวงจรมามากกว่า 10 ปี
+                    เราจะดูแลคุณและตอบโจทย์ทุกความต้องการของคุณได้อย่างมั่นใจและใส่ใจในทุกรายละเอียด
                 </p>
                 <div class="spc"><b>"เราไม่ใช่แค่ทีมจัดบูธ — เราคือพาร์ทเนอร์ด้านภาพลักษณ์ของคุณ"</b></div>
 
@@ -302,7 +319,11 @@
                 <button><b>ติดต่อเรา</b></button>
             </div>
         </div>
+        <p class="footer">
+            © THE BOXXET Co., Ltd. All rights reserved.
+        </p>
     </div>
+
     <script src="App_TBX.js">
     </script>
 </body>

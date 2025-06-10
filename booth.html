@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>แสดงภาพพร้อมคำอธิบาย</title>
+  <style>
+    .thumbnail {
+      width: 100px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .viewer-container {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    #largeImage {
+      width: 400px;
+      border: 2px solid #ccc;
+    }
+
+    .description-box {
+      max-width: 300px;
+    }
+
+    .description-text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>คลิกที่รูปเพื่อดูขนาดใหญ่และคำอธิบาย</h2>
+
+  <!-- รูปภาพขนาดเล็ก -->
+  <img src="image1.jpg" class="thumbnail" onclick="showImageWithDescription('image1.jpg')">
+  <img src="image2.jpg" class="thumbnail" onclick="showImageWithDescription('image2.jpg')">
+  <img src="image3.jpg" class="thumbnail" onclick="showImageWithDescription('image3.jpg')">
+
+  <!-- พื้นที่แสดงภาพใหญ่และคำอธิบาย -->
+  <div class="viewer-container">
+    <img id="largeImage" src="image1.jpg" alt="รูปขนาดใหญ่">
+    <div class="description-box">
+      <h3>คำอธิบาย</h3>
+      <div id="descriptionText" class="description-text">
+        นี่คือภาพที่ 1 ซึ่งแสดงถึงธรรมชาติที่สวยงาม.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // คำอธิบายแต่ละภาพ
+    const descriptions = {
+      "image1.jpg": "นี่คือภาพที่ 1 ซึ่งแสดงถึงธรรมชาติที่สวยงาม.",
+      "image2.jpg": "นี่คือภาพที่ 2 เป็นภาพเมืองยามค่ำคืนที่มีแสงไฟสวยงาม.",
+      "image3.jpg": "นี่คือภาพที่ 3 ของชายหาดที่เงียบสงบและอากาศสดชื่น."
+    };
+
+    function showImageWithDescription(imageSrc) {
+      document.getElementById('largeImage').src = imageSrc;
+      document.getElementById('descriptionText').innerText = descriptions[imageSrc] || "ไม่มีคำอธิบายสำหรับภาพนี้.";
+    }
+  </script>
+
+</body>
+</html>
