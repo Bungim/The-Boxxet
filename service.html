@@ -179,6 +179,8 @@
             margin-top: 1em;
             font-size: 1.1em;
             color: #222;
+            text-decoration: none;
+            /* ไม่มีขีดเส้นใต้ */
         }
 
         .service-card p {
@@ -186,7 +188,16 @@
             color: #222;
         }
 
-        .footer {
+        .service-card a {
+            text-decoration: none;
+            /* ไม่มีขีดเส้นใต้ */
+        }
+
+        .service-card a h3:hover {
+            color: rgb(255, 201, 5);
+        }
+
+        .footer {margin-top: 20px;
             font-family: 'Kanit', sans-serif;
             display: block;
             background-color: #333;
@@ -233,10 +244,11 @@
             <h1>บริการของเรา</h1>
             <h2>ครบวงจรเรื่องงานออกบูธ ออกแบบ ติดตั้ง และอุปกรณ์เสริมทุกชนิด</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <img src="Asset/13.3.png" alt="ออกแบบบูธ">
-                    <h3>บูธมาตรฐาน</h3>
-                    <p>โครงสร้างบูธสำเร็จรูป แข็งแรง จัดวางง่าย ใช้งานสะดวก</p>
+                <div class="service-card"><a href="booth.html">
+                        <img src="Asset/13.3.png" alt="ออกแบบบูธ">
+                        <h3>บูธมาตรฐาน</h3>
+                        <p>โครงสร้างบูธสำเร็จรูป แข็งแรง จัดวางง่าย ใช้งานสะดวก</p>
+                    </a>
                 </div>
                 <div class="service-card">
                     <img src="Asset/4.4.4.4.png" alt="เช่าอุปกรณ์">
@@ -265,6 +277,9 @@
                 </div>
             </div>
         </section>
+    </div>
+        <div class="footer">
+        © THE BOXXET Co., Ltd. All rights reserved.
     </div>
     <script src="App_TBX.js">
     </script>
