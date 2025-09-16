@@ -101,3 +101,5 @@ function showImage(src, descriptionHTML) {
   document.getElementById('mainImage').src = src;
   document.getElementById('imageDescription').innerHTML = descriptionHTML + lineButtonHTML;
 }
+
+//gallery

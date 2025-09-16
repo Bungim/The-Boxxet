@@ -1,333 +1,335 @@
 <html lang="th">
 
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
-    rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="เว็บไซต์ของเราให้บริการ...">
-  <meta name="keywords" content="เว็บ, ทำเว็บไซต์, เรียนรู้ HTML">
-  <meta name="author" content="ชื่อของคุณ">
-  <meta name="robots" content="index, follow"> <!-- ให้คลานและติดอันดับ -->
-  <meta property="og:title" content="ชื่อเว็บไซต์ของคุณ">
-  <meta property="og:description" content="คำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์ของคุณ">
-  <meta property="og:image" content="URL ของภาพที่จะแสดง">
-  <meta property="og:url" content="URL ของเว็บไซต์">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ชื่อเว็บไซต์ของคุณ">
-  <meta name="twitter:description" content="คำอธิบายของเว็บไซต์">
-  <meta name="twitter:image" content="URL ของภาพที่จะแสดง">
-  <title>บูธไม้ | The Boxxet</title>
-  <link rel="icon" type="image/png" href="Asset/AW_THE-BOXXET_Master_logo_W_Favicon.png">
-  <style>
-    html,
-    body {
-      margin-left: 0;
-      margin-right: 0;
-      height: 100%;
-      background-image: linear-gradient(rgba(9, 40, 61, 0.9), rgba(9, 40, 61, 0.7)),
-        url(Asset/IMG_20210217_091028_1.jpg);
-      background-size: cover;
-      background-position: center;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บไซต์ของเราให้บริการ...">
+    <meta name="keywords" content="เว็บ, ทำเว็บไซต์, เรียนรู้ HTML">
+    <meta name="author" content="ชื่อของคุณ">
+    <meta name="robots" content="index, follow"> <!-- ให้คลานและติดอันดับ -->
+    <meta property="og:title" content="ชื่อเว็บไซต์ของคุณ">
+    <meta property="og:description" content="คำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์ของคุณ">
+    <meta property="og:image" content="URL ของภาพที่จะแสดง">
+    <meta property="og:url" content="URL ของเว็บไซต์">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ชื่อเว็บไซต์ของคุณ">
+    <meta name="twitter:description" content="คำอธิบายของเว็บไซต์">
+    <meta name="twitter:image" content="URL ของภาพที่จะแสดง">
+    <title>บูธไม้ | The Boxxet</title>
+    <link rel="icon" type="image/png" href="Asset/AW_THE-BOXXET_Master_logo_W_Favicon.png">
+    <style>
+        html,
+        body {
+            margin-left: 0;
+            margin-right: 0;
+            height: 100%;
+            background-image: linear-gradient(rgba(9, 40, 61, 0.9), rgba(9, 40, 61, 0.7)),
+                url(Asset/IMG_20210217_091028_1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
 
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
-      /*ใช้ Flexbox*/
-      justify-content: space-between;
-      align-items: top;
-      background-image: linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138));
-      /* สีพื้นหลังของเฮดเดอร์ */
-      padding: 10;
-      /*ความกว้างของพื้นหลัง*/
-      text-align: center;
-      /* จัดข้อความให้ตรงกลาง */
-      width: 100%;
-      /* ทำให้เฮดเดอร์ขยายเต็มหน้าจอ */
-      box-sizing: border-box;
-      /* รวมขอบและการ padding ในขนาดที่กำหนด */
-      padding-left: 30px;
-      padding-right: 30px;
-      transition: 0.3s;
-      z-index: 2;
-    }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            /*ใช้ Flexbox*/
+            justify-content: space-between;
+            align-items: top;
+            background-image: linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138));
+            /* สีพื้นหลังของเฮดเดอร์ */
+            padding: 10;
+            /*ความกว้างของพื้นหลัง*/
+            text-align: center;
+            /* จัดข้อความให้ตรงกลาง */
+            width: 100%;
+            /* ทำให้เฮดเดอร์ขยายเต็มหน้าจอ */
+            box-sizing: border-box;
+            /* รวมขอบและการ padding ในขนาดที่กำหนด */
+            padding-left: 30px;
+            padding-right: 30px;
+            transition: 0.3s;
+            z-index: 2;
+        }
 
-    .navbar h1 {
-      display: inline-block;
-      color: white;
-      /* สีลิงก์เป็นสีขาว */
-      text-decoration: none;
-      /* ไม่มีขีดเส้นใต้ */
-      margin: 0 15px;
-      /* ระยะห่างระหว่างลิงก์ */
-      font-size: 18px;
-      margin-left: auto;
-      /* ทำให้เมนูไปอยู่ด้านขวา */
-      padding: 20px 20px;
-    }
+        .navbar h1 {
+            display: inline-block;
+            color: white;
+            /* สีลิงก์เป็นสีขาว */
+            text-decoration: none;
+            /* ไม่มีขีดเส้นใต้ */
+            margin: 0 15px;
+            /* ระยะห่างระหว่างลิงก์ */
+            font-size: 18px;
+            margin-left: auto;
+            /* ทำให้เมนูไปอยู่ด้านขวา */
+            padding: 20px 20px;
+        }
 
-    .navbar a {
-      color: white;
-      /* สีลิงก์เป็นสีขาว */
-      text-decoration: none;
-      /* ไม่มีขีดเส้นใต้ */
-      margin: 0 15px;
-      /* ระยะห่างระหว่างลิงก์ */
-      font-size: 18px;
-      margin-left: auto;
-      /* ทำให้เมนูไปอยู่ด้านขวา */
-      padding: 10px 20px;
-    }
+        .navbar a {
+            color: white;
+            /* สีลิงก์เป็นสีขาว */
+            text-decoration: none;
+            /* ไม่มีขีดเส้นใต้ */
+            margin: 0 15px;
+            /* ระยะห่างระหว่างลิงก์ */
+            font-size: 18px;
+            margin-left: auto;
+            /* ทำให้เมนูไปอยู่ด้านขวา */
+            padding: 10px 20px;
+        }
 
-    .navbar a:hover {
-      background-color: rgb(255, 201, 5);
-      border-radius: 10px;
-      color: black;
-      transition: 0.3ms;
-    }
+        .navbar a:hover {
+            background-color: rgb(255, 201, 5);
+            border-radius: 10px;
+            color: black;
+            transition: 0.3ms;
+        }
 
-    .menu-icon {
-      display: none;
-      float: right;
-      padding: 14px 16px;
-      font-size: 20px;
-      cursor: pointer;
-      color: white;
-    }
+        .menu-icon {
+            display: none;
+            float: right;
+            padding: 14px 16px;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+        }
 
-    @media (max-width: 768px) {
-      .navbar a {
-        display: none;
-        width: 100%;
-        text-align: left;
-      }
+        @media (max-width: 768px) {
+            .navbar a {
+                display: none;
+                width: 100%;
+                text-align: left;
+            }
 
-      .menu-icon {
-        display: block;
-      }
+            .menu-icon {
+                display: block;
+            }
 
-      .navbar.responsive .navbar-links a {
-        display: block;
-      }
-    }
+            .navbar.responsive .navbar-links a {
+                display: block;
+            }
+        }
 
-    .boothdetail {
-      max-width: 1200px;
-      margin: auto;
-      padding: 40px 80px;
-      text-align: center;
-      background-image: linear-gradient(to bottom, rgb(9, 40, 61), rgb(21, 92, 138));
-      border-radius: 10px;
-      /* background-color: rgb(9, 40, 61); */
-      /* พื้นหลังเฉพาะตัวการ์ด */
-      margin-top: 120px;
-    }
+        .boothdetail {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 80px;
+            text-align: center;
+            background-image: linear-gradient(to bottom, rgb(9, 40, 61), rgb(21, 92, 138));
+            border-radius: 10px;
+            /* background-color: rgb(9, 40, 61); */
+            /* พื้นหลังเฉพาะตัวการ์ด */
+            margin-top: 120px;
+        }
 
-    .boothdetail h1 {
-      font-family: 'Kanit', sans-serif;
-      color: white;
-    }
+        .boothdetail h1 {
+            font-family: 'Kanit', sans-serif;
+            color: white;
+        }
 
-    .thumbnail-container {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
 
-    .thumbnail-container img {
-      width: 100px;
-      height: auto;
-      cursor: pointer;
-      border: 2px solid transparent;
-      transition: 0.3s;
-    }
+        .thumbnail-container img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
 
-    .thumbnail-container img:hover {
-      border-color: #007BFF;
-    }
+        .thumbnail-container img:hover {
+            border-color: #007BFF;
+        }
 
-    .divider {
-      border: none;
-      height: 2px;
-      background-color: #ccc;
-      margin: 30px auto;
-      width: 80%;
-      max-width: 900px;
-    }
+        .divider {
+            border: none;
+            height: 2px;
+            background-color: #ccc;
+            margin: 30px auto;
+            width: 80%;
+            max-width: 900px;
+        }
 
-    .big-image {
-      width: 500px;
-      max-width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 20px;
-      background-color: whitesmoke;
-    }
+        .big-image {
+            width: 500px;
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: whitesmoke;
+        }
 
-    .description {
-      font-family: 'Kanit', sans-serif;
-      margin-top: 10px;
-      font-size: 1rem;
-      color: white;
-      text-align: left;
-    }
+        .description {
+            font-family: 'Kanit', sans-serif;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: white;
+            text-align: left;
+        }
 
-    .description h1 {
-      text-decoration: underline;
-      font-size: 40px;
-    }
+        .description h1 {
+            text-decoration: underline;
+            font-size: 40px;
+        }
 
-    .description h2 {
-      font-size: 30px;
-    }
+        .description h2 {
+            font-size: 30px;
+        }
 
-    .description ul {
-      font-size: 25px;
-    }
+        .description ul {
+            font-size: 25px;
+        }
 
-    .description a {
-      display: flex;
-      justify-content: center;
-      /* จัดกลางแนวนอน */
-      align-items: center;
-      /* จัดกลางแนวตั้ง */
-      text-align: center;
-    }
-
-
-
-    .line-button {
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: rgb(9, 40, 61);
-      color: whitesmoke;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .line-button:hover {
-      background-color: rgb(255, 201, 5);
-      color: #333;
-    }
-
-    .display-container {
-      display: flex;
-      justify-content: left;
-      align-items: flex-start;
-      gap: 100px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    @media (max-width: 768px) {
-      .display-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .description {
-        text-align: center;
-      }
-           .description ul{
-        text-align: left;
-      }
-    }
+        .description a {
+            display: flex;
+            justify-content: center;
+            /* จัดกลางแนวนอน */
+            align-items: center;
+            /* จัดกลางแนวตั้ง */
+            text-align: center;
+        }
 
 
-    .footer {
-      font-family: 'Kanit', sans-serif;
-      display: flex;
-      background-color: #333;
-      color: white;
-      justify-content: center;
-      /* จัดกลางแนวนอน */
-      align-items: bottom;
-      /* จัดกลางแนวตั้ง */
-      text-align: center;
-      padding: 10px;
-      margin-top: 70px;
-    }
-  </style>
+
+        .line-button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: rgb(9, 40, 61);
+            color: whitesmoke;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .line-button:hover {
+            background-color: rgb(255, 201, 5);
+            color: #333;
+        }
+
+        .display-container {
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+            gap: 100px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .display-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .description {
+                text-align: center;
+            }
+
+            .description ul {
+                text-align: left;
+            }
+        }
+
+
+        .footer {
+            font-family: 'Kanit', sans-serif;
+            display: flex;
+            background-color: #333;
+            color: white;
+            justify-content: center;
+            /* จัดกลางแนวนอน */
+            align-items: bottom;
+            /* จัดกลางแนวตั้ง */
+            text-align: center;
+            padding: 10px;
+            margin-top: 70px;
+        }
+    </style>
 </head>
 
 <body>
-  <header id="header">
-    <div style="margin-left: 2vw;"><a href="index.html"><img src="Asset/AW_THE-BOXXET_Master_logo_W_Edited.png"
-          alt="logo" height="70"></a></div>
-    <div class="navbar" id="navbar"><b>
-        <span class="menu-icon" onclick="toggleMenu()">☰</span>
-        <div class="navbar-links">
-          <h1><a href="index.html">
-              หน้าหลัก
-            </a>
-            <a href="about.html">
-              เกี่ยวกับเรา
-            </a>
-            <a href="service.html">
-              บริการของเรา
-            </a>
-            <a href="#gallery">
-              ผลงานของเรา
-            </a>
-            <a href="#contact">
-              ติดต่อเรา
-            </a>
-          </h1>
-      </b>
+    <header id="header">
+        <div style="margin-left: 2vw;"><a href="index.html"><img src="Asset/AW_THE-BOXXET_Master_logo_W_Edited.png"
+                    alt="logo" height="70"></a></div>
+        <div class="navbar" id="navbar"><b>
+                <span class="menu-icon" onclick="toggleMenu()">☰</span>
+                <div class="navbar-links">
+                    <h1><a href="index.html">
+                            หน้าหลัก
+                        </a>
+                        <a href="about.html">
+                            เกี่ยวกับเรา
+                        </a>
+                        <a href="service.html">
+                            บริการของเรา
+                        </a>
+                        <a href="gallery.html">
+                            ผลงานของเรา
+                        </a>
+                        <a href="contact.html">
+                            ติดต่อเรา
+                        </a>
+                    </h1>
+            </b>
+        </div>
+        </div>
+    </header>
+    <div class='boothdetail'>
+        <h1>บูธไม้</h1>
+        <div class="thumbnail-container">
+            <img src="Asset/4.4.4.png" alt="รูป 1"
+                onclick="showImage('Asset/4.4.4.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+            <img src="Asset/4.4.4.4.png" alt="รูป 2"
+                onclick="showImage('Asset/4.4.4.4.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+            <img src="Asset/4.4.4.4.4.png" alt="รูป 3"
+                onclick="showImage('Asset/4.4.4.4.4.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+            <img src="Asset/5.5.5.5.png" alt="รูป 1"
+                onclick="showImage('Asset/5.5.5.5.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x3 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+            <img src="Asset/5.5.5.png" alt="รูป 2"
+                onclick="showImage('Asset/5.5.5.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x3 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+            <img src="Asset/5.5.png" alt="รูป 3"
+                onclick="showImage('Asset/5.5.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x3 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+            <img src="Asset/6.6.6.6.png" alt="รูป 3"
+                onclick="showImage('Asset/6.6.6.6.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+            <img src="Asset/6.6.6.png" alt="รูป 1"
+                onclick="showImage('Asset/6.6.6.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+            <img src="Asset/7.7.7.7.7.png" alt="รูป 2"
+                onclick="showImage('Asset/7.7.7.7.7.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>สามารถนำแผ่นไม้มาติดตั้งได้</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+            <img src="Asset/7.7.7.png" alt="รูป 3"
+                onclick="showImage('Asset/7.7.7.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>สามารถนำแผ่นไม้มาติดตั้งได้</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
+        </div>
+        <hr class="divider">
+        <div class="display-container">
+            <img id="mainImage" class="big-image" src="Asset/4.4.4.png" alt="บูธมาตรฐานรูปใหญ่">
+            <div id="imageDescription" class="description">
+                <h1>รายละเอียด</h1>
+                <h2>บูธไม้ ขนาด 2x2 เมตร</h2>
+                <ul>
+                    <li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li>
+                    <li>ติดตั้งง่าย น้ำหนักเบา</li>
+                    <li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li>
+                    <li>ราคาเริ่มต้นที่ - บาท</li>
+                </ul>
+                <a href="https://lin.ee/dscnJys" class="line-button" target='_blank'>ติดต่อเรา</a>
+            </div>
+        </div>
     </div>
-    </div>
-  </header>
-  <div class='boothdetail'>
-    <h1>บูธไม้</h1>
-    <div class="thumbnail-container">
-      <img src="Asset/4.4.4.png" alt="รูป 1"
-        onclick="showImage('Asset/4.4.4.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-      <img src="Asset/4.4.4.4.png" alt="รูป 2"
-        onclick="showImage('Asset/4.4.4.4.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-      <img src="Asset/4.4.4.4.4.png" alt="รูป 3"
-        onclick="showImage('Asset/4.4.4.4.4.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-      <img src="Asset/5.5.5.5.png" alt="รูป 1"
-        onclick="showImage('Asset/5.5.5.5.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x3 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-      <img src="Asset/5.5.5.png" alt="รูป 2"
-        onclick="showImage('Asset/5.5.5.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x3 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-      <img src="Asset/5.5.png" alt="รูป 3"
-        onclick="showImage('Asset/5.5.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x3 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-      <img src="Asset/6.6.6.6.png" alt="รูป 3"
-        onclick="showImage('Asset/6.6.6.6.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-      <img src="Asset/6.6.6.png" alt="รูป 1"
-        onclick="showImage('Asset/6.6.6.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 3x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-      <img src="Asset/7.7.7.7.7.png" alt="รูป 2"
-        onclick="showImage('Asset/7.7.7.7.7.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>สามารถนำแผ่นไม้มาติดตั้งได้</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-      <img src="Asset/7.7.7.png" alt="รูป 3"
-        onclick="showImage('Asset/7.7.7.png', '<h1>รายละเอียด</h1><h2>บูธไม้ ขนาด 2x2 เมตร</h2><ul><li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li><li>ติดตั้งง่าย น้ำหนักเบา</li><li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li><li>สามารถนำแผ่นไม้มาติดตั้งได้</li><li>ราคาเริ่มต้นที่ - บาท</li></ul>')">
-    </div>
-    <hr class="divider">
-    <div class="display-container">
-      <img id="mainImage" class="big-image" src="Asset/4.4.4.png" alt="บูธมาตรฐานรูปใหญ่">
-      <div id="imageDescription" class="description">
-        <h1>รายละเอียด</h1>
-        <h2>บูธไม้ ขนาด 2x2 เมตร</h2>
-        <ul>
-          <li>โครงสร้างทำจากไม้ สำหรับออกบูธอาหารหรือจัดบูธทั่วไป</li>
-          <li>ติดตั้งง่าย น้ำหนักเบา</li>
-          <li>ป้ายชื่อสามารถกำหนดได้ด้วยสติ๊กเกอร์ไดคัท</li>
-          <li>ราคาเริ่มต้นที่ - บาท</li>
-        </ul>
-        <a href="https://lin.ee/dscnJys" class="line-button" target='_blank'>ติดต่อเรา</a>
-      </div>
-    </div>
-  </div>
 
-  <script src="App_TBX.js">
-  </script>
+    <script src="App_TBX.js">
+    </script>
 </body>
 
 </html>

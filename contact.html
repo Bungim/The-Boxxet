@@ -20,24 +20,18 @@
     <meta name="twitter:title" content="ชื่อเว็บไซต์ของคุณ">
     <meta name="twitter:description" content="คำอธิบายของเว็บไซต์">
     <meta name="twitter:image" content="URL ของภาพที่จะแสดง">
-    <title>บริการของเรา | The Boxxet</title>
+    <title>อุปกรณ์เสริม | The Boxxet</title>
     <link rel="icon" type="image/png" href="Asset/AW_THE-BOXXET_Master_logo_W_Favicon.png">
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
+        html,
         body {
             margin-left: 0;
             margin-right: 0;
-            margin-top: 90px;
-            height: 1000px;
+            height: 100%;
             background-image: linear-gradient(rgba(9, 40, 61, 0.9), rgba(9, 40, 61, 0.7)),
                 url(Asset/IMG_20210217_091028_1.jpg);
             background-size: cover;
             background-position: center;
-            /* height: 100%; */
-
         }
 
         header {
@@ -76,8 +70,6 @@
             margin-left: auto;
             /* ทำให้เมนูไปอยู่ด้านขวา */
             padding: 20px 20px;
-
-
         }
 
         .navbar a {
@@ -125,90 +117,7 @@
             }
         }
 
-        .service {
-            font-family: 'Kanit', sans-serif;
-            color: whitesmoke;
-        }
-
-        .our-services {
-            max-width: 1200px;
-            margin: auto;
-            padding: 40px 80px;
-            text-align: center;
-            background-image: linear-gradient(to bottom, rgb(9, 40, 61), rgb(21, 92, 138));
-            border-radius: 10px;
-            /* background-color: rgb(9, 40, 61); */
-            /* พื้นหลังเฉพาะตัวการ์ด */
-            margin-top: 120px;
-        }
-
-        .our-services h1 {
-            font-size: 40px;
-            text-decoration: underline;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .service-card {
-            background-color: #f8f8f8;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-            color: #222;
-        }
-
-        .service-card:hover {
-            transform: translateY(-4px);
-        }
-
-        .service-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: contain;
-            border-radius: 8px;
-        }
-
-        .service-card h3 {
-            margin-top: 1em;
-            font-size: 1.5em;
-            color: #222;
-            text-decoration: none;
-            /* ไม่มีขีดเส้นใต้ */
-        }
-
-        .service-card p {
-            font-size: 1em;
-            color: #222;
-        }
-
-        .service-card a {
-            text-decoration: none;
-            /* ไม่มีขีดเส้นใต้ */
-        }
-
-        .service-card a h3:hover {
-            color: rgb(255, 201, 5);
-        }
-
-        .footer {
-            margin-top: 20px;
-            font-family: 'Kanit', sans-serif;
-            display: block;
-            background-color: #333;
-            color: white;
-            justify-content: center;
-            /* จัดกลางแนวนอน */
-            align-items: center;
-            /* จัดกลางแนวตั้ง */
-            text-align: center;
-            padding: 10px;
-        }
+    
     </style>
 </head>
 
@@ -225,13 +134,13 @@
                         <a href="about.html">
                             เกี่ยวกับเรา
                         </a>
-                        <a href="service.html" onclick="scrollToTop()">
+                        <a href="service.html" >
                             บริการของเรา
                         </a>
                         <a href="gallery.html">
                             ผลงานของเรา
                         </a>
-                        <a href="contact.html">
+                        <a href="contact.html" onclick="scrollToTop()">
                             ติดต่อเรา
                         </a>
                     </h1>
@@ -239,51 +148,8 @@
         </div>
         </div>
     </header>
-    <div class="service">
-        <section class="our-services">
-            <h1>บริการของเรา</h1>
-            <h2>ครบวงจรเรื่องงานออกบูธ ออกแบบ ติดตั้ง และอุปกรณ์เสริมทุกชนิด</h2>
-            <div class="services-grid">
-                <div class="service-card"><a href="booth.html">
-                        <img src="Asset/13.3.png" alt="ออกแบบบูธ">
-                        <h3>บูธมาตรฐาน</h3>
-                        <p>โครงสร้างบูธสำเร็จรูป แข็งแรง จัดวางง่าย ใช้งานสะดวก</p>
-                    </a>
-                </div>
-                <div class="service-card"><a href="WDbooth.html">
-                        <img src="Asset/4.4.4.4.png" alt="เช่าอุปกรณ์">
-                        <h3>บูธไม้</h3>
-                        <p>ใช้สำหรับออกงานเกี่ยวกับอาหารและงานแสดงสินค้าทั่วไป</p>
-                    </a>
-                </div>
-                <div class="service-card"><a href="backdrop.html">
-                        <img src="Asset/22.png" alt="ติดตั้งบูธ">
-                        <h3>แบคดรอป</h3>
-                        <p>แบคดรอปคุณภาพสูง ช่วยสร้างบรรยากาศให้งานน่าประทับใจ</p>
-                    </a>
-                </div>
-                <div class="service-card"><a href="custombooth.html">
-                        <img src="Asset/MaximaCostomBooth2-Cx6N9DeX.png" alt="รื้อถอนบูธ">
-                        <h3>บูธแบบ Custom</h3>
-                        <p>ดีไซน์บูธสร้างสรรค์ ให้ตรงตามแบรนด์และเป้าหมายของลูกค้า</p>
-                    </a>
-                </div>
-                <div class="service-card"><a href="carpet.html">
-                        <img src="Asset/25.png" alt="ตกแต่งบูธ">
-                        <h3>พรม</h3>
-                        <p>พื้นสวยจบด้วยพรม ตกแต่งบูธให้โดดเด่นไม่เหมือนใคร เสริมความประทับใจตั้งแต่ก้าวแรก</p>
-                    </a>
-                </div>
-                <div class="service-card"><a href="equipment.html">
-                        <img src="Asset/ไฟ2.png" alt="ดูแลหน้างาน">
-                        <h3>อุปกรณ์เสริม</h3>
-                        <p>ชุดอุปกรณ์เสริมสำหรับบูธ โต๊ะ เก้าอี้ ไฟ ปลั๊ก ชั้นวางของ พร้อมใช้งานในทุกงานแสดงสินค้า
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>
+    
+
     <script src="App_TBX.js">
     </script>
 </body>
