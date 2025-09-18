@@ -376,53 +376,53 @@
 </html>
 
 
-<script>
-  function updateDots(grid) {
-    const wrapper = grid.closest('.gallery-wrapper');
-    const dots = wrapper.querySelector('.dots');
-    const items = grid.querySelectorAll('div');
-    const scrollLeft = grid.scrollLeft;
-    const activeIndex = Math.round(scrollLeft / grid.clientWidth);
+<script src="App_TBX.js">
+  // function updateDots(grid) {
+  //   const wrapper = grid.closest('.gallery-wrapper');
+  //   const dots = wrapper.querySelector('.dots');
+  //   const items = grid.querySelectorAll('div');
+  //   const scrollLeft = grid.scrollLeft;
+  //   const activeIndex = Math.round(scrollLeft / grid.clientWidth);
 
 
-    dots.innerHTML = '';
-    for (let i = 0; i < items.length; i++) {
-      const dot = document.createElement('span');
-      dot.classList.add('dot');
-      if (i === activeIndex) dot.classList.add('active');
-      dots.appendChild(dot);
-    }
-  }
+  //   dots.innerHTML = '';
+  //   for (let i = 0; i < items.length; i++) {
+  //     const dot = document.createElement('span');
+  //     dot.classList.add('dot');
+  //     if (i === activeIndex) dot.classList.add('active');
+  //     dots.appendChild(dot);
+  //   }
+  // }
 
 
-  window.addEventListener('load', () => {
-    document.querySelectorAll('.gallery-grid').forEach(updateDots);
-  });
+  // window.addEventListener('load', () => {
+  //   document.querySelectorAll('.gallery-grid').forEach(updateDots);
+  // });
 
-  function scrollGallery(button, direction) {
-    const grid = button.closest('.gallery-wrapper').querySelector('.gallery-grid');
-    const scrollAmount = grid.clientWidth * 0.8;
-    grid.scrollBy({
-      left: direction === 'left' ? -scrollAmount : scrollAmount,
-      behavior: 'smooth'
-    });
-  }
+  // function scrollGallery(button, direction) {
+  //   const grid = button.closest('.gallery-wrapper').querySelector('.gallery-grid');
+  //   const scrollAmount = grid.clientWidth * 0.8;
+  //   grid.scrollBy({
+  //     left: direction === 'left' ? -scrollAmount : scrollAmount,
+  //     behavior: 'smooth'
+  //   });
+  // }
 
-  window.onscroll = function () {
-    var header = document.getElementById("header");
-    var logo = document.getElementById("logo");
-    if (window.scrollY > 50) {
-      header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // เปลี่ยนเป็นสีใสเมื่อเลื่อน
-      header.style.opacity = "0.95"; // เปลี่ยนโปร่งใสของโลโก้
-    } else {
-      header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // กลับเป็นทึบ
-      header.style.opacity = "1"; // เปลี่ยนเป็นทึบ
-    }
-  };
-  function toggleMenu() {
-    var nav = document.getElementById("navbar");
-    nav.classList.toggle("responsive");
-  } //ปุ่ม Navbar 3 ขีด
+  // window.onscroll = function () {
+  //   var header = document.getElementById("header");
+  //   var logo = document.getElementById("logo");
+  //   if (window.scrollY > 50) {
+  //     header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // เปลี่ยนเป็นสีใสเมื่อเลื่อน
+  //     header.style.opacity = "0.95"; // เปลี่ยนโปร่งใสของโลโก้
+  //   } else {
+  //     header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // กลับเป็นทึบ
+  //     header.style.opacity = "1"; // เปลี่ยนเป็นทึบ
+  //   }
+  // };
+  // function toggleMenu() {
+  //   var nav = document.getElementById("navbar");
+  //   nav.classList.toggle("responsive");
+  // } //ปุ่ม Navbar 3 ขีด
 </script>
 </body>
 
