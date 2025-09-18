@@ -95,7 +95,7 @@ function scrollToTop() {
 }
 
 function showImage(src, descriptionHTML) {
-    const lineButtonHTML = `
+  const lineButtonHTML = `
 <a href="https://lin.ee/dscnJys" class="line-button" target='_blank'>ติดต่อเรา</a>
   `;
   document.getElementById('mainImage').src = src;
@@ -103,3 +103,28 @@ function showImage(src, descriptionHTML) {
 }
 
 //gallery
+//dot
+
+function updateDots(grid) {
+const wrapper = grid.closest('.gallery-wrapper');
+const dots = wrapper.querySelector('.dots');
+const items = grid.querySelectorAll('div');
+const scrollLeft = grid.scrollLeft;
+const activeIndex = Math.round(scrollLeft / grid.clientWidth);
+
+
+dots.innerHTML = '';
+for (let i = 0; i < items.length; i++) {
+const dot = document.createElement('span');
+dot.classList.add('dot');
+if (i === activeIndex) dot.classList.add('active');
+dots.appendChild(dot);
+}
+}
+
+
+window.addEventListener('load', () => {
+document.querySelectorAll('.gallery-grid').forEach(updateDots);
+});
+
+//pointer

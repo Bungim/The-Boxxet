@@ -102,6 +102,42 @@
     }
 
     @media (max-width: 768px) {
+      .gallery-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 12px;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+        max-height: 400px;
+      }
+
+      .gallery-grid>div {
+        width: 100vw;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+      }
+
+      .arrow-buttons {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+
+      .arrow-buttons button {
+        pointer-events: all;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 24px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
       .navbar a {
         display: none;
         width: 100%;
@@ -116,10 +152,12 @@
         display: block;
       }
     }
-h1 {
-  color: #ffffff;
+
+    h1 {
+      color: #ffffff;
       text-align: center;
-}
+      font-size: 2rem;
+    }
 
     h2 {
       /* margin: 40px 20px 10px; */
@@ -132,17 +170,23 @@ h1 {
       border-radius: 12px;
       padding: 20px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .gallery-wrapper {
+      position: relative;
     }
 
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 15px;
-      /* margin-top: 10px; */
+      margin-top: 10px;
     }
 
     .gallery-grid img {
       width: 100%;
+      height: auto;
       border-radius: 8px;
       object-fit: cover;
       aspect-ratio: 4 / 3;
@@ -154,11 +198,102 @@ h1 {
       transform: scale(1.03);
     }
 
-    .caption {
-      margin-top: 6px;
-      font-size: 0.9rem;
-      color: #333;
-      text-align: center;
+
+
+
+
+    .arrow-buttons {
+      display: none;
+      z-index: 2;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 0;
+        padding-bottom: 20px;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        object-fit: contain;
+      }
+
+
+      .gallery-grid img {
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .caption {
+        font-size: 1rem;
+        padding: 10px 0;
+      }
+
+      .dots {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 4px;
+        background-color: #ccc;
+        border-radius: 50%;
+      }
+
+      .dot.active {
+        background-color: #09283D;
+      }
+    }
+
+
+    @media (min-width: 769px) {
+      .gallery-grid {
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      .gallery-wrapper {
+        overflow: hidden;
+      }
+
+      .gallery-grid.scrollable {
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+      }
+
+      .gallery-grid.scrollable>div {
+        flex: 0 0 calc(25% - 12px);
+        /* แสดง 4 ภาพพอดี */
+        scroll-snap-align: start;
+      }
+
+      .gallery-wrapper:hover .arrow-buttons {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        padding: 0 10px;
+      }
+
+      .arrow-buttons button {
+        background-color: rgba(0, 0, 0, 0.4);
+        border: none;
+        color: white;
+        font-size: 20px;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 50%;
+      }
     }
 
     footer {
@@ -201,66 +336,93 @@ h1 {
   </head>
 
   <body>
-    <h1>LASKDJLKASJDKL</h1>
-    <section class="gallery-section">
-      <h2>📍 Central Festival Samui</h2>
-      <div class="gallery-grid">
-        <div>
-          <img src="central1.jpg" alt="บูธสินค้าแฟชั่น">
-          <div class="caption">บูธสินค้าแฟชั่น</div>
-        </div>
-        <div>
-          <img src="central2.jpg" alt="บูธอาหาร & ของทานเล่น">
-          <div class="caption">บูธอาหาร & ของทานเล่น</div>
-        </div>
-        <div>
-          <img src="central3.jpg" alt="บูธของใช้ในบ้าน">
-          <div class="caption">บูธของใช้ในบ้าน</div>
-        </div>
-      </div>
-    </section>
+    <h1>ผลงานของเรา</h1>
 
     <section class="gallery-section">
-      <h2>📍 Motor Show 2024 @ Impact</h2>
-      <div class="gallery-grid">
-        <div>
-          <img src="motor1.jpg" alt="บูธรถยนต์ไฟฟ้า">
-          <div class="caption">บูธรถยนต์ไฟฟ้า</div>
+      <h2>📍 งานคุณหยาดคนสวย</h2>
+      <div class="gallery-wrapper">
+        <div class="arrow-buttons">
+          <button onclick="scrollGallery(this, 'left')">❮</button>
+          <button onclick="scrollGallery(this, 'right')">❯</button>
         </div>
-        <div>
-          <img src="motor2.jpg" alt="บูธอุปกรณ์แต่งรถ">
-          <div class="caption">บูธอุปกรณ์แต่งรถ</div>
+        <div class="gallery-grid scrollable" onscroll="updateDots(this)">
+          <div>
+            <img src="Asset/IMG_20201005_154837_0.jpg" alt="บูธชิมสินค้า">
+          </div>
+          <div>
+            <img src="Asset/IMG_20210217_091020_0.jpg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Asset/IMG_20210217_091028_1.jpg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Asset/Booth5.jpg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Asset/Booth6.jpg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
         </div>
-        <div>
-          <img src="motor3.jpg" alt="บูธประดับยนต์">
-          <div class="caption">บูธประดับยนต์</div>
-        </div>
+        <div class="dots"></div>
       </div>
     </section>
-
-    <section class="gallery-section">
-      <h2>📍 งาน Makro Fair 2024 @ เชียงใหม่</h2>
-      <div class="gallery-grid">
-        <div>
-          <img src="makro1.jpg" alt="บูธชิมสินค้า">
-          <div class="caption">บูธชิมสินค้า</div>
-        </div>
-        <div>
-          <img src="makro2.jpg" alt="บูธอุปกรณ์ร้านอาหาร">
-          <div class="caption">บูธอุปกรณ์ร้านอาหาร</div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      © 2025 The Boxxet. All rights reserved.
-    </footer>
   </body>
 
 </html>
 
 
-<script src="App_TBX.js">
+<script>
+  function updateDots(grid) {
+    const wrapper = grid.closest('.gallery-wrapper');
+    const dots = wrapper.querySelector('.dots');
+    const items = grid.querySelectorAll('div');
+    const scrollLeft = grid.scrollLeft;
+    const activeIndex = Math.round(scrollLeft / grid.clientWidth);
+
+
+    dots.innerHTML = '';
+    for (let i = 0; i < items.length; i++) {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      if (i === activeIndex) dot.classList.add('active');
+      dots.appendChild(dot);
+    }
+  }
+
+
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.gallery-grid').forEach(updateDots);
+  });
+
+  function scrollGallery(button, direction) {
+    const grid = button.closest('.gallery-wrapper').querySelector('.gallery-grid');
+    const scrollAmount = grid.clientWidth * 0.8;
+    grid.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  window.onscroll = function () {
+    var header = document.getElementById("header");
+    var logo = document.getElementById("logo");
+    if (window.scrollY > 50) {
+      header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // เปลี่ยนเป็นสีใสเมื่อเลื่อน
+      header.style.opacity = "0.95"; // เปลี่ยนโปร่งใสของโลโก้
+    } else {
+      header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // กลับเป็นทึบ
+      header.style.opacity = "1"; // เปลี่ยนเป็นทึบ
+    }
+  };
+  function toggleMenu() {
+    var nav = document.getElementById("navbar");
+    nav.classList.toggle("responsive");
+  } //ปุ่ม Navbar 3 ขีด
 </script>
 </body>
 
