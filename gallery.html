@@ -34,6 +34,8 @@
       margin-top: 90px;
     }
 
+
+
     header {
       position: fixed;
       top: 0;
@@ -153,12 +155,21 @@
       }
     }
 
-    h1 {
+    .gallery h1{
       color: #ffffff;
       text-align: center;
       font-size: 2rem;
       font-family: 'Kanit', sans-serif;
+      text-decoration: underline;
     }
+
+
+    h1 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 2rem;
+    }
+
 
     h2 {
       /* margin: 40px 20px 10px; */
@@ -343,11 +354,120 @@
   </head>
 
   <body>
-    <h1>ผลงานของเรา</h1>
+    <div class="gallery">
+      <h1>ผลงานของเรา</h1>
+    </div>
+
     <!-- เริ่มใส่ตรงนี้ -->
 
     <section class="gallery-section">
-      <h2>📍 งาน AVA Expo 2025: สถาบันการจัดการปัญญาภิวัฒน์</h2>
+      <h2>📍 งานมหกรรมวัยใสห่างไกลภาวะสมองเสื่อม : โรงแรม Golden Sea หัวหิน</h2>
+      <div class="gallery-wrapper">
+        <div class="arrow-buttons">
+          <button onclick="scrollGallery(this, 'left')">❮</button>
+          <button onclick="scrollGallery(this, 'right')">❯</button>
+        </div>
+        <div class="gallery-grid scrollable" onscroll="updateDots(this)">
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1221.jpeg" alt="บูธชิมสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1222.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1224.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1226.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1227.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1234.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1235.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1237.jpeg" alt="บูธชิมสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1238.jpeg" alt="บูธชิมสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1243.jpeg" alt="บูธชิมสินค้า">
+          </div>
+        </div>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2>📍 งานติดตั้งชั้นวางของ : ไบเทค บางนา</h2>
+      <div class="gallery-wrapper">
+        <div class="arrow-buttons">
+          <button onclick="scrollGallery(this, 'left')">❮</button>
+          <button onclick="scrollGallery(this, 'right')">❯</button>
+        </div>
+        <div class="gallery-grid scrollable" onscroll="updateDots(this)">
+          <div>
+            <img src="Gallery_1/Job7/IMG_5062.jpeg" alt="บูธชิมสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5064.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5065.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5066.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5067.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5068.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5069.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+
+        </div>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2>📍 งานติดตั้งบูธ : สำนักงานเขตจตุจักร</h2>
+      <div class="gallery-wrapper">
+        <div class="arrow-buttons">
+          <button onclick="scrollGallery(this, 'left')">❮</button>
+          <button onclick="scrollGallery(this, 'right')">❯</button>
+        </div>
+        <div class="gallery-grid scrollable" onscroll="updateDots(this)">
+          <div>
+            <img src="Gallery_1/Job6/IMG_4730.jpeg" alt="บูธชิมสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job6/IMG_4731.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job6/IMG_4735.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job6/IMG_4736.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+          <div>
+            <img src="Gallery_1/Job6/IMG_4737.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+          </div>
+        </div>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2>📍 งาน AVA Expo 2025 : สถาบันการจัดการปัญญาภิวัฒน์</h2>
       <div class="gallery-wrapper">
         <div class="arrow-buttons">
           <button onclick="scrollGallery(this, 'left')">❮</button>
@@ -561,52 +681,7 @@
 
 
 <script src="App_TBX.js">
-  // function updateDots(grid) {
-  //   const wrapper = grid.closest('.gallery-wrapper');
-  //   const dots = wrapper.querySelector('.dots');
-  //   const items = grid.querySelectorAll('div');
-  //   const scrollLeft = grid.scrollLeft;
-  //   const activeIndex = Math.round(scrollLeft / grid.clientWidth);
 
-
-  //   dots.innerHTML = '';
-  //   for (let i = 0; i < items.length; i++) {
-  //     const dot = document.createElement('span');
-  //     dot.classList.add('dot');
-  //     if (i === activeIndex) dot.classList.add('active');
-  //     dots.appendChild(dot);
-  //   }
-  // }
-
-
-  // window.addEventListener('load', () => {
-  //   document.querySelectorAll('.gallery-grid').forEach(updateDots);
-  // });
-
-  // function scrollGallery(button, direction) {
-  //   const grid = button.closest('.gallery-wrapper').querySelector('.gallery-grid');
-  //   const scrollAmount = grid.clientWidth * 0.8;
-  //   grid.scrollBy({
-  //     left: direction === 'left' ? -scrollAmount : scrollAmount,
-  //     behavior: 'smooth'
-  //   });
-  // }
-
-  // window.onscroll = function () {
-  //   var header = document.getElementById("header");
-  //   var logo = document.getElementById("logo");
-  //   if (window.scrollY > 50) {
-  //     header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // เปลี่ยนเป็นสีใสเมื่อเลื่อน
-  //     header.style.opacity = "0.95"; // เปลี่ยนโปร่งใสของโลโก้
-  //   } else {
-  //     header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // กลับเป็นทึบ
-  //     header.style.opacity = "1"; // เปลี่ยนเป็นทึบ
-  //   }
-  // };
-  // function toggleMenu() {
-  //   var nav = document.getElementById("navbar");
-  //   nav.classList.toggle("responsive");
-  // } //ปุ่ม Navbar 3 ขีด
 </script>
 </body>
 
