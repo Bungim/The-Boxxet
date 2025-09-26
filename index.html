@@ -91,7 +91,7 @@
             }
         }
 
-         /* Responsive background logo sizes */
+        /* Responsive background logo sizes */
         @media (max-width: 576px) {
             .background-logo {
                 background-size: 70%;
@@ -387,22 +387,28 @@
         @media (max-width: 768px) {
 
             .slider-container {
-            background-color: rgb(9, 40, 61);
-            border-radius: 10px;
-            width: 100%;
-            max-width: 1500;
-            margin: auto;
-            overflow: hidden;
-            position: relative;
-            touch-action: pan-y;
-            height: auto;       
-            min-height: 300px;   
-        }
+                background-color: rgb(9, 40, 61);
+                border-radius: 10px;
+                width: 100%;
+                max-width: 1500;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                touch-action: pan-y;
+                height: 300px;
+                min-height: 300px;
+            }
+
+            .slider-track {
+                height: 100%;
+            }
+            
             /* ปรับ layout สำหรับ smartphone */
             .slide {
                 flex: 0 0 50%;
                 box-sizing: border-box;
                 padding: 15px;
+                height: 300px;
             }
 
             .text-overlay {
@@ -410,11 +416,37 @@
             }
         }
 
+        @media (max-width: 480px) {
+            .slider-container {
+                height: 250px;
+                min-height: 250px;
+            }
+            
+            .slide {
+                height: 250px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .slider-container {
+                height: 400px;
+            }
+            
+            .slide {
+                flex: 0 0 33.333%;
+                height: 400px;
+            }
+        }
+
         /* สำหรับจอใหญ่ */
-        @media (min-width: 1024px) {
+        @media (min-width: 1025px) {
+            .slider-container {
+                height: 450px;
+            }
+            
             .slide {
                 flex: 0 0 25%;
-                /* แสดง 3 รูป */
+                height: 450px;
             }
         }
 
@@ -616,7 +648,7 @@
             /* จัดกลางแนวตั้ง */
             text-align: center;
             padding: 10px;
-        }
+        }        
     </style>
 </head>
 
