@@ -6,19 +6,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
   <meta charset="UTF-8">
+  <meta property="og:site_name" content="The Boxxet Co.,Ltd.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="เว็บไซต์ของเราให้บริการ...">
-  <meta name="keywords" content="เว็บ, ทำเว็บไซต์, เรียนรู้ HTML">
-  <meta name="author" content="ชื่อของคุณ">
+  <meta name="description" content="The Boxxet - บริการรับจัดบูธและเช่าอุปกรณ์จัดบูธครบวงจร รวมถึงงานอีเวนต์และอุปกรณ์การจัดแสดง งานวิจัยการตลาดและกิจกรรมต่างๆมากมาย เช่น บูธมาตรฐาน บูธไม้ ชั้นวางสินค้า อุปกรณ์ส่องสว่าง พรมและอุปกรณ์พร้อมออกบูธที่มีมาตรฐาน คุณภาพสูง บริการระดับมืออาชีพ">
+  <meta name="keywords"
+      content="booth system,Exhibition,บูธมาตรฐาน,บูธไม้,อุปกรณ์ออกบูธ,เช่าบูธ,บูธนิทรรศการ,บูธสำเร็จรูป,ปูพรมสำเร็จรูป,บูธ,ชั้นวางสินค้า,บูธออกงาน,รับจัดบูธ,รับจัดบูธมาตรฐาน,พรมออกบูธ">
+  <meta name="author" content=" ">
   <meta name="robots" content="index, follow"> <!-- ให้คลานและติดอันดับ -->
-  <meta property="og:title" content="ชื่อเว็บไซต์ของคุณ">
-  <meta property="og:description" content="คำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์ของคุณ">
-  <meta property="og:image" content="URL ของภาพที่จะแสดง">
-  <meta property="og:url" content="URL ของเว็บไซต์">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ชื่อเว็บไซต์ของคุณ">
-  <meta name="twitter:description" content="คำอธิบายของเว็บไซต์">
-  <meta name="twitter:image" content="URL ของภาพที่จะแสดง">
+  <meta property="og:title" content="The Boxxet - บริการรับจัดบูธและเช่าอุปกรณ์จัดบูธครบวงจร">
+  <meta property="og:description"
+      content="รับจัดบูธมาตรฐาน งานอีเวนต์และอุปกรณ์การจัดแสดง งานวิจัยการตลาดและกิจกรรมต่างๆมากมาย">
+  <meta property="og:image" content="Asset/AW_THE-BOXXET_Master_logo_2_Edited.png">
+  <meta property="og:url" content="http://www.theboxxet.com/">
+  <meta property="og:locale" content="th">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="หน้าหลัก">
+  <meta name="twitter:description" content="The Boxxet - บริการรับจัดบูธและเช่าอุปกรณ์จัดบูธครบวงจร รวมถึงงานอีเวนต์และอุปกรณ์การจัดแสดง งานวิจัยการตลาดและกิจกรรมต่างๆมากมาย เช่น บูธมาตรฐาน บูธไม้ ชั้นวางสินค้า อุปกรณ์ส่องสว่าง พรมและอุปกรณ์พร้อมออกบูธที่มีมาตรฐาน คุณภาพสูง บริการระดับมืออาชีพ">
+  <meta name="twitter:image" content="Asset/AW_THE-BOXXET_Master_logo_2_Edited.png">
   <title>Gallery - The Boxxet</title>
   <link rel="icon" type="image/png" href="Asset/AW_THE-BOXXET_Master_logo_W_Favicon.png">
   <style>
@@ -33,6 +37,8 @@
       background-position: center;
       margin-top: 90px;
     }
+
+
 
     header {
       position: fixed;
@@ -153,12 +159,21 @@
       }
     }
 
-    h1 {
+    .gallery h1 {
       color: #ffffff;
       text-align: center;
       font-size: 2rem;
       font-family: 'Kanit', sans-serif;
+      text-decoration: underline;
     }
+
+
+    h1 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 2rem;
+    }
+
 
     h2 {
       /* margin: 40px 20px 10px; */
@@ -343,11 +358,13 @@
   </head>
 
   <body>
-    <h1>ผลงานของเรา</h1>
-    <!-- เริ่มใส่ตรงนี้ -->
+    <div class="gallery">
+      <h1>ผลงานของเรา</h1>
+    </div>
 
+    <!-- เริ่มใส่ตรงนี้ -->
     <section class="gallery-section">
-      <h2>📍 งาน AVA Expo 2025: สถาบันการจัดการปัญญาภิวัฒน์</h2>
+      <h2>📍 งานกยศ 2025 : สถาบันการจัดการปัญญาภิวัฒน์</h2>
       <div class="gallery-wrapper">
         <div class="arrow-buttons">
           <button onclick="scrollGallery(this, 'left')">❮</button>
@@ -355,39 +372,147 @@
         </div>
         <div class="gallery-grid scrollable" onscroll="updateDots(this)">
           <div>
-            <img src="Gallery_1/Job5/IMG_5080.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job5/IMG_5080.jpeg" alt="บูธแสดงสินค้า">
           </div>
           <div>
-            <img src="Gallery_1/Job5/IMG_5052.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job5/IMG_5052.jpeg" alt="บูธแสดงสินค้า">
           </div>
           <div>
-            <img src="Gallery_1/Job5/IMG_5051.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job5/IMG_5051.jpeg" alt="บูธแสดงสินค้า">
           </div>
           <div>
-            <img src="Gallery_1/Job5/IMG_5049.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job5/IMG_5049.jpeg" alt="บูธแสดงสินค้า">
           </div>
           <div>
-            <img src="Gallery_1/Job5/IMG_5046.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job5/IMG_5046.jpeg" alt="บูธแสดงสินค้า">
           </div>
           <div>
-            <img src="Gallery_1/Job5/IMG_5041.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job5/IMG_5041.jpeg" alt="บูธแสดงสินค้า">
           </div>
           <div>
-            <img src="Gallery_1/Job5/IMG_5034.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job5/IMG_5034.jpeg" alt="บูธแสดงสินค้า">
           </div>
           <div>
-            <img src="Gallery_1/Job5/IMG_5025.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job5/IMG_5025.jpeg" alt="บูธแสดงสินค้า">
           </div>
           <div>
-            <img src="Gallery_1/Job5/IMG_5010.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job5/IMG_5010.jpeg" alt="บูธแสดงสินค้า">
           </div>
           <div>
-            <img src="Gallery_1/Job5/IMG_5018.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job5/IMG_5018.jpeg" alt="บูธแสดงสินค้า">
           </div>
         </div>
         <div class="dots"></div>
       </div>
     </section>
+
+    <section class="gallery-section">
+      <h2>📍 งานมหกรรมวัยใสห่างไกลภาวะสมองเสื่อม : โรงแรม Golden Sea หัวหิน</h2>
+      <div class="gallery-wrapper">
+        <div class="arrow-buttons">
+          <button onclick="scrollGallery(this, 'left')">❮</button>
+          <button onclick="scrollGallery(this, 'right')">❯</button>
+        </div>
+        <div class="gallery-grid scrollable" onscroll="updateDots(this)">
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1221.jpeg" alt="บูธมาตรฐาน">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1222.jpeg" alt="บูธมาตรฐาน">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1224.jpeg" alt="บูธมาตรฐาน">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1226.jpeg" alt="บูธมาตรฐาน">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1227.jpeg" alt="บูธมาตรฐาน">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1234.jpeg" alt="บูธมาตรฐาน">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1235.jpeg" alt="บูธมาตรฐาน">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1237.jpeg" alt="บูธมาตรฐาน">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1238.jpeg" alt="บูธมาตรฐาน">
+          </div>
+          <div>
+            <img src="Gallery_1/Job_Goldensea/IMG_1243.jpeg" alt="บูธมาตรฐาน">
+          </div>
+        </div>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2>📍 งานติดตั้งชั้นวางของ : ไบเทค บางนา</h2>
+      <div class="gallery-wrapper">
+        <div class="arrow-buttons">
+          <button onclick="scrollGallery(this, 'left')">❮</button>
+          <button onclick="scrollGallery(this, 'right')">❯</button>
+        </div>
+        <div class="gallery-grid scrollable" onscroll="updateDots(this)">
+          <div>
+            <img src="Gallery_1/Job7/IMG_5062.jpeg" alt="ชั้นวางสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5064.jpeg" alt="ชั้นวางสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5065.jpeg" alt="ชั้นวางสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5066.jpeg" alt="ชั้นวางสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5067.jpeg" alt="ชั้นวางสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5068.jpeg" alt="ชั้นวางสินค้า">
+          </div>
+          <div>
+            <img src="Gallery_1/Job7/IMG_5069.jpeg" alt="ชั้นวางสินค้า">
+          </div>
+
+        </div>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2>📍 งานชมรม To be Number One : สำนักงานเขตจตุจักร</h2>
+      <div class="gallery-wrapper">
+        <div class="arrow-buttons">
+          <button onclick="scrollGallery(this, 'left')">❮</button>
+          <button onclick="scrollGallery(this, 'right')">❯</button>
+        </div>
+        <div class="gallery-grid scrollable" onscroll="updateDots(this)">
+          <div>
+            <img src="Gallery_1/Job6/IMG_4730.jpeg" alt="Booth system">
+          </div>
+          <div>
+            <img src="Gallery_1/Job6/IMG_4731.jpeg" alt="Booth system">
+          </div>
+          <div>
+            <img src="Gallery_1/Job6/IMG_4735.jpeg" alt="Booth system">
+          </div>
+          <div>
+            <img src="Gallery_1/Job6/IMG_4736.jpeg" alt="Booth system">
+          </div>
+          <div>
+            <img src="Gallery_1/Job6/IMG_4737.jpeg" alt="Booth system">
+          </div>
+        </div>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+ 
 
     <section class="gallery-section">
       <h2>📍 งานมหกรรมสุขศาลาพระราชทาน ครั้งที่ 3 พ.ศ. 2568 : ศูนย์ประชุมวายุภักษ์</h2>
@@ -398,41 +523,41 @@
         </div>
         <div class="gallery-grid scrollable" onscroll="updateDots(this)">
           <div>
-            <img src="Gallery_1/Job4/IMG_4582.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job4/IMG_4582.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job4/IMG_4581.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job4/IMG_4581.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job4/IMG_4579.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job4/IMG_4579.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job4/IMG_4578.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job4/IMG_4578.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job4/IMG_4577.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job4/IMG_4577.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job4/IMG_4576.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job4/IMG_4576.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job4/IMG_4575.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job4/IMG_4575.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job4/IMG_4573.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job4/IMG_4573.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job4/IMG_4571.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job4/IMG_4571.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job4/IMG_4570.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job4/IMG_4570.jpeg" alt="Booth system">
           </div>
         </div>
         <div class="dots"></div>
       </div>
     </section>
     <section class="gallery-section">
-      <h2>📍 งานติดตั้งบูธ - โรงแรม The Kaset : Hua Hin</h2>
+      <h2>📍 งานประชุมวิศวกรรมโยธาแห่งชาติ ครั้งที่ 30 - ศูนย์ประชุมนานาชาติจุฬาภรณ์ โรงแรม The Kaset : Hua Hin</h2>
       <div class="gallery-wrapper">
         <div class="arrow-buttons">
           <button onclick="scrollGallery(this, 'left')">❮</button>
@@ -440,34 +565,34 @@
         </div>
         <div class="gallery-grid scrollable" onscroll="updateDots(this)">
           <div>
-            <img src="Gallery_1/Job3/IMG_3896.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job3/IMG_3896.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job3/IMG_3895.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job3/IMG_3895.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job3/IMG_3894.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job3/IMG_3894.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job3/IMG_3891.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job3/IMG_3891.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job3/IMG_3890.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job3/IMG_3890.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job3/IMG_3887.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job3/IMG_3887.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job3/IMG_3886.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job3/IMG_3886.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job3/IMG_3883.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job3/IMG_3883.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job3/IMG_3882.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job3/IMG_3882.jpeg" alt="Booth system">
           </div>
           <div>
-            <img src="Gallery_1/Job3/IMG_3881.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job3/IMG_3881.jpeg" alt="Booth system">
           </div>
         </div>
         <div class="dots"></div>
@@ -483,34 +608,34 @@
         </div>
         <div class="gallery-grid scrollable" onscroll="updateDots(this)">
           <div>
-            <img src="Gallery_1/Job2/IMG_7510.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job2/IMG_7510.jpeg" alt="บูธกิจกรรม">
           </div>
           <div>
-            <img src="Gallery_1/Job2/IMG_7509.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job2/IMG_7509.jpeg" alt="บูธกิจกรรม">
           </div>
           <div>
-            <img src="Gallery_1/Job2/IMG_7506.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job2/IMG_7506.jpeg" alt="บูธกิจกรรม">
           </div>
           <div>
-            <img src="Gallery_1/Job2/IMG_7505.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job2/IMG_7505.jpeg" alt="บูธกิจกรรม">
           </div>
           <div>
-            <img src="Gallery_1/Job2/IMG_7504.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job2/IMG_7504.jpeg" alt="บูธกิจกรรม">
           </div>
           <div>
-            <img src="Gallery_1/Job2/IMG_7502.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job2/IMG_7502.jpeg" alt="บูธกิจกรรม">
           </div>
           <div>
-            <img src="Gallery_1/Job2/IMG_7498.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job2/IMG_7498.jpeg" alt="บูธกิจกรรม">
           </div>
           <div>
-            <img src="Gallery_1/Job2/IMG_7487.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job2/IMG_7487.jpeg" alt="บูธกิจกรรม">
           </div>
           <div>
-            <img src="Gallery_1/Job2/IMG_7496.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job2/IMG_7496.jpeg" alt="บูธกิจกรรม">
           </div>
           <div>
-            <img src="Gallery_1/Job2/IMG_7492.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job2/IMG_7492.jpeg" alt="บูธกิจกรรม">
           </div>
         </div>
         <div class="dots"></div>
@@ -526,25 +651,25 @@
         </div>
         <div class="gallery-grid scrollable" onscroll="updateDots(this)">
           <div>
-            <img src="Gallery_1/Job1/IMG_3540.jpeg" alt="บูธชิมสินค้า">
+            <img src="Gallery_1/Job1/IMG_3540.jpeg" alt="ปูพรมอัดเรียบ">
           </div>
           <div>
-            <img src="Gallery_1/Job1/IMG_3541.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job1/IMG_3541.jpeg" alt="ปูพรมอัดเรียบ">
           </div>
           <div>
-            <img src="Gallery_1/Job1/IMG_3542.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job1/IMG_3542.jpeg" alt="ปูพรมอัดเรียบ">
           </div>
           <div>
-            <img src="Gallery_1/Job1/IMG_3543.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job1/IMG_3543.jpeg" alt="ปูพรมอัดเรียบ">
           </div>
           <div>
-            <img src="Gallery_1/Job1/IMG_3545.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job1/IMG_3545.jpeg" alt="ปูพรมอัดเรียบ">
           </div>
           <div>
-            <img src="Gallery_1/Job1/IMG_3546.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job1/IMG_3546.jpeg" alt="ปูพรมอัดเรียบ">
           </div>
           <div>
-            <img src="Gallery_1/Job1/IMG_3547.jpeg" alt="บูธอุปกรณ์ร้านอาหาร">
+            <img src="Gallery_1/Job1/IMG_3547.jpeg" alt="ปูพรมอัดเรียบ">
           </div>
         </div>
         <div class="dots"></div>
@@ -561,52 +686,7 @@
 
 
 <script src="App_TBX.js">
-  // function updateDots(grid) {
-  //   const wrapper = grid.closest('.gallery-wrapper');
-  //   const dots = wrapper.querySelector('.dots');
-  //   const items = grid.querySelectorAll('div');
-  //   const scrollLeft = grid.scrollLeft;
-  //   const activeIndex = Math.round(scrollLeft / grid.clientWidth);
 
-
-  //   dots.innerHTML = '';
-  //   for (let i = 0; i < items.length; i++) {
-  //     const dot = document.createElement('span');
-  //     dot.classList.add('dot');
-  //     if (i === activeIndex) dot.classList.add('active');
-  //     dots.appendChild(dot);
-  //   }
-  // }
-
-
-  // window.addEventListener('load', () => {
-  //   document.querySelectorAll('.gallery-grid').forEach(updateDots);
-  // });
-
-  // function scrollGallery(button, direction) {
-  //   const grid = button.closest('.gallery-wrapper').querySelector('.gallery-grid');
-  //   const scrollAmount = grid.clientWidth * 0.8;
-  //   grid.scrollBy({
-  //     left: direction === 'left' ? -scrollAmount : scrollAmount,
-  //     behavior: 'smooth'
-  //   });
-  // }
-
-  // window.onscroll = function () {
-  //   var header = document.getElementById("header");
-  //   var logo = document.getElementById("logo");
-  //   if (window.scrollY > 50) {
-  //     header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // เปลี่ยนเป็นสีใสเมื่อเลื่อน
-  //     header.style.opacity = "0.95"; // เปลี่ยนโปร่งใสของโลโก้
-  //   } else {
-  //     header.style.backgroundImage = "linear-gradient(to right, rgb(9, 40, 61), rgb(21, 92, 138)"; // กลับเป็นทึบ
-  //     header.style.opacity = "1"; // เปลี่ยนเป็นทึบ
-  //   }
-  // };
-  // function toggleMenu() {
-  //   var nav = document.getElementById("navbar");
-  //   nav.classList.toggle("responsive");
-  // } //ปุ่ม Navbar 3 ขีด
 </script>
 </body>
 
